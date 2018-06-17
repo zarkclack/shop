@@ -1,0 +1,665 @@
+2018-06-15 14:08:18,861 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on hope with PID 2060 (E:\IdeaProjects\shop-parent\shop-goods-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-15 14:08:18,886 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-15 14:08:18,888 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-15 18:29:29,540 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on hope with PID 4172 (E:\IdeaProjects\shop-parent\shop-goods-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-15 18:29:29,550 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-15 18:29:29,566 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-15 18:29:29,554 INFO (StartupInfoLogger.java:48)- Starting MemberApp on hope with PID 3916 (E:\IdeaProjects\shop-parent\shop-member-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-15 18:29:29,577 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-15 18:29:29,578 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-15 18:30:29,222 INFO (StartupInfoLogger.java:57)- Started MemberApp in 64.751 seconds (JVM running for 78.863)
+2018-06-15 18:30:31,555 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 66.044 seconds (JVM running for 96.157)
+2018-06-15 18:31:03,983 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 10632 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-15 18:31:04,009 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-15 18:31:04,010 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-15 18:31:39,872 INFO (StartupInfoLogger.java:57)- Started OrderApp in 41.979 seconds (JVM running for 88.878)
+2018-06-15 19:05:34,407 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(id) from order_info 
+2018-06-15 19:05:34,488 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-06-15 19:05:34,657 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:05:34,672 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,order_sn,pay_type,order_status,flow_status,pay_status,order_time,consignee,phone,order_amount from order_info order by id desc limit ?,? 
+2018-06-15 19:05:34,673 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 5(Integer)
+2018-06-15 19:05:34,687 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:34,688 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:05:34,850 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:34,851 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:05:35,027 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,030 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,031 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:05:35,033 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,034 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,036 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,037 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 15(BigDecimal)
+2018-06-15 19:05:35,040 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,041 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 26(BigDecimal)
+2018-06-15 19:05:35,043 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,045 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,045 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 27(BigDecimal)
+2018-06-15 19:05:35,047 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,048 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,051 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,052 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 14(BigDecimal)
+2018-06-15 19:05:35,054 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,055 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 24(BigDecimal)
+2018-06-15 19:05:35,057 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,059 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,060 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 25(BigDecimal)
+2018-06-15 19:05:35,062 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,063 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,064 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,065 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 10(BigDecimal)
+2018-06-15 19:05:35,067 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,069 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 16(BigDecimal)
+2018-06-15 19:05:35,071 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,072 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,073 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 17(BigDecimal)
+2018-06-15 19:05:35,075 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,075 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,077 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,078 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 9(BigDecimal)
+2018-06-15 19:05:35,082 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,084 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 14(BigDecimal)
+2018-06-15 19:05:35,088 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,090 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,091 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 15(BigDecimal)
+2018-06-15 19:05:35,093 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,094 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2018-06-15 19:05:35,914 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(id) from order_info 
+2018-06-15 19:05:35,914 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-06-15 19:05:35,915 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:05:35,917 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,order_sn,pay_type,order_status,flow_status,pay_status,order_time,consignee,phone,order_amount from order_info order by id desc limit ?,? 
+2018-06-15 19:05:35,917 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 5(Integer)
+2018-06-15 19:05:35,920 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,921 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:05:35,924 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,925 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:05:35,926 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,927 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,928 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:05:35,930 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,931 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,933 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,933 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 15(BigDecimal)
+2018-06-15 19:05:35,935 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,936 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 26(BigDecimal)
+2018-06-15 19:05:35,937 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,939 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,940 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 27(BigDecimal)
+2018-06-15 19:05:35,941 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,942 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,944 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,945 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 14(BigDecimal)
+2018-06-15 19:05:35,947 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,948 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 24(BigDecimal)
+2018-06-15 19:05:35,949 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,950 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,951 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 25(BigDecimal)
+2018-06-15 19:05:35,952 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,953 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,954 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,955 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 10(BigDecimal)
+2018-06-15 19:05:35,957 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,958 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 16(BigDecimal)
+2018-06-15 19:05:35,960 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,961 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,962 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 17(BigDecimal)
+2018-06-15 19:05:35,964 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,965 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,966 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:05:35,967 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 9(BigDecimal)
+2018-06-15 19:05:35,969 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,970 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 14(BigDecimal)
+2018-06-15 19:05:35,972 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,973 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:05:35,974 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 15(BigDecimal)
+2018-06-15 19:05:35,975 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:05:35,976 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:05:35,977 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2018-06-15 19:06:05,916 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(id) from order_info 
+2018-06-15 19:06:05,917 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-06-15 19:06:05,919 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:06:05,920 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,order_sn,pay_type,order_status,flow_status,pay_status,order_time,consignee,phone,order_amount from order_info order by id desc limit ?,? 
+2018-06-15 19:06:05,921 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 5(Integer)
+2018-06-15 19:06:05,924 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:06:05,925 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:06:05,929 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,931 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:06:05,933 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,934 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,935 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:06:05,936 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,937 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:06:05,938 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:06:05,939 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 15(BigDecimal)
+2018-06-15 19:06:05,941 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,941 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 26(BigDecimal)
+2018-06-15 19:06:05,943 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,944 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,945 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 27(BigDecimal)
+2018-06-15 19:06:05,946 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,948 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:06:05,949 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:06:05,950 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 14(BigDecimal)
+2018-06-15 19:06:05,953 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,953 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 24(BigDecimal)
+2018-06-15 19:06:05,955 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,956 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,957 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 25(BigDecimal)
+2018-06-15 19:06:05,959 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,960 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:06:05,960 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:06:05,961 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 10(BigDecimal)
+2018-06-15 19:06:05,963 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,964 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 16(BigDecimal)
+2018-06-15 19:06:05,966 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,968 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,969 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 17(BigDecimal)
+2018-06-15 19:06:05,970 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,971 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:06:05,972 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:06:05,973 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 9(BigDecimal)
+2018-06-15 19:06:05,975 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,976 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 14(BigDecimal)
+2018-06-15 19:06:05,978 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,979 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:05,980 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 15(BigDecimal)
+2018-06-15 19:06:05,982 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:05,983 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:06:05,984 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2018-06-15 19:06:19,907 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:06:19,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:06:19,913 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:06:19,914 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:06:19,915 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:19,916 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:06:19,917 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:19,919 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:19,920 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:06:19,921 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:19,922 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:06:19,923 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:06:24,054 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:06:24,198 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-15 19:06:24,482 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:06:30,965 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:06:30,965 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:06:30,967 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:06:30,968 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:06:30,970 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:30,971 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:06:30,972 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:30,973 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:06:30,974 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:06:30,975 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:06:30,976 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:06:30,976 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:06:31,063 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:06:31,064 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-15 19:06:31,077 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:09:52,905 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 13464 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-15 19:09:52,915 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-15 19:09:52,916 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-15 19:10:24,559 INFO (StartupInfoLogger.java:57)- Started OrderApp in 34.265 seconds (JVM running for 44.214)
+2018-06-15 19:12:20,603 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(id) from order_info 
+2018-06-15 19:12:20,667 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-06-15 19:12:20,711 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:12:20,714 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,order_sn,pay_type,order_status,flow_status,pay_status,order_time,consignee,phone,order_amount from order_info order by id desc limit ?,? 
+2018-06-15 19:12:20,715 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 5(Integer)
+2018-06-15 19:12:20,729 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:12:20,730 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:12:20,743 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,744 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:12:20,752 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,754 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,755 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:12:20,757 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,758 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:12:20,761 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:12:20,762 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 15(BigDecimal)
+2018-06-15 19:12:20,764 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,765 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 26(BigDecimal)
+2018-06-15 19:12:20,767 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,769 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,770 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 27(BigDecimal)
+2018-06-15 19:12:20,772 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,773 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:12:20,776 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:12:20,777 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 14(BigDecimal)
+2018-06-15 19:12:20,779 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,780 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 24(BigDecimal)
+2018-06-15 19:12:20,782 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,784 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,785 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 25(BigDecimal)
+2018-06-15 19:12:20,787 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,788 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:12:20,790 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:12:20,791 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 10(BigDecimal)
+2018-06-15 19:12:20,793 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,794 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 16(BigDecimal)
+2018-06-15 19:12:20,796 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,797 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,798 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 17(BigDecimal)
+2018-06-15 19:12:20,800 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,801 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:12:20,802 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:12:20,803 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 9(BigDecimal)
+2018-06-15 19:12:20,805 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,808 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 14(BigDecimal)
+2018-06-15 19:12:20,818 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,820 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:20,821 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 15(BigDecimal)
+2018-06-15 19:12:20,823 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:20,824 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:12:20,827 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2018-06-15 19:12:37,354 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:12:37,355 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:12:37,362 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:12:37,364 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:12:37,365 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:37,366 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:12:37,368 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:37,369 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:12:37,370 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:12:37,372 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:12:37,373 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:12:37,373 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:12:37,485 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:12:37,486 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-15 19:12:37,489 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:12:37,510 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from order_action where order_id = ? 
+2018-06-15 19:12:37,511 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:12:37,677 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:13:52,125 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(id) from order_info 
+2018-06-15 19:13:52,126 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-06-15 19:13:52,127 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:13:52,129 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,order_sn,pay_type,order_status,flow_status,pay_status,order_time,consignee,phone,order_amount from order_info order by id desc limit ?,? 
+2018-06-15 19:13:52,130 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 5(Integer)
+2018-06-15 19:13:52,132 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:13:52,132 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:13:52,135 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,136 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:13:52,138 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,140 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,141 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:13:52,143 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,144 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:13:52,146 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:13:52,147 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 15(BigDecimal)
+2018-06-15 19:13:52,151 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,152 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 26(BigDecimal)
+2018-06-15 19:13:52,154 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,156 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,157 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 27(BigDecimal)
+2018-06-15 19:13:52,159 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,161 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:13:52,163 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:13:52,164 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 14(BigDecimal)
+2018-06-15 19:13:52,167 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,168 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 24(BigDecimal)
+2018-06-15 19:13:52,170 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,172 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,173 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 25(BigDecimal)
+2018-06-15 19:13:52,175 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,176 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:13:52,178 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:13:52,180 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 10(BigDecimal)
+2018-06-15 19:13:52,182 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,184 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 16(BigDecimal)
+2018-06-15 19:13:52,185 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,187 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,189 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 17(BigDecimal)
+2018-06-15 19:13:52,191 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,192 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:13:52,194 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:13:52,195 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 9(BigDecimal)
+2018-06-15 19:13:52,197 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,198 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 14(BigDecimal)
+2018-06-15 19:13:52,201 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,202 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:13:52,203 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 15(BigDecimal)
+2018-06-15 19:13:52,204 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:13:52,205 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:13:52,206 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2018-06-15 19:14:26,190 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:14:26,191 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:14:26,193 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:14:26,194 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:14:26,196 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:14:26,197 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:14:26,198 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:14:26,199 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:14:26,200 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:14:26,202 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:14:26,203 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:14:26,204 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:14:26,219 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:14:26,220 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-15 19:14:26,223 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:14:26,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from order_action where order_id = ? 
+2018-06-15 19:14:26,229 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:14:26,231 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:15:26,350 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:15:26,351 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:15:26,353 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:15:26,354 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:15:26,356 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:15:26,358 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:15:26,360 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:15:26,362 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:15:26,363 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:15:26,365 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:15:26,366 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:15:26,366 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:15:26,367 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:15:26,377 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 976374599358873600(String), 1(Long), 33.00(BigDecimal), 1(Byte), 0(Byte), 2(Byte), 0(Byte), 2018-03-21 16:27:00.0(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 16(Long)
+2018-06-15 19:15:26,595 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:15:27,795 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:15:27,796 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:15:27,798 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:15:27,799 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:15:27,801 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:15:27,801 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:15:27,803 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:15:27,804 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:15:27,804 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:15:27,806 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:15:27,806 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:15:27,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:15:27,818 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:15:27,819 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-15 19:15:27,823 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:15:27,866 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from order_action where order_id = ? 
+2018-06-15 19:15:27,867 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:15:27,870 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:16:25,510 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:16:25,510 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:16:25,512 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:16:25,513 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:16:25,515 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:16:25,516 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:16:25,517 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:16:25,518 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:16:25,520 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:16:25,521 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:16:25,522 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:16:25,523 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:16:25,524 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:16:25,525 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 976374599358873600(String), 1(Long), 33.00(BigDecimal), 1(Byte), 1(Byte), 2(Byte), 0(Byte), 2018-03-21 16:27:00.0(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 16(Long)
+2018-06-15 19:16:25,563 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:16:25,640 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:16:25,641 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:16:25,643 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:16:25,644 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:16:25,646 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:16:25,648 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:16:25,650 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:16:25,652 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:16:25,654 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:16:25,726 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:16:25,727 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:16:25,728 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:16:25,756 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:16:25,758 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-15 19:16:25,762 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:16:25,806 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from order_action where order_id = ? 
+2018-06-15 19:16:25,809 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:16:25,811 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:32:45,071 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id from user_login where user_name = ? 
+2018-06-15 19:32:45,082 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String)
+2018-06-15 19:32:45,086 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:33:11,564 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, user_name,password, state from user_login where user_name = ? and password = ? 
+2018-06-15 19:33:11,565 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String), C4CA4238A0B923820DCC509A6F75849B(String)
+2018-06-15 19:33:11,672 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:34:49,259 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:34:49,363 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:34:49,418 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:34:49,419 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:34:49,420 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:34:49,421 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:34:49,422 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:34:49,430 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:34:49,440 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:34:49,442 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:34:49,442 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:34:49,443 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:34:49,443 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:34:49,565 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 976374599358873600(String), 1(Long), 33.00(BigDecimal), 2(Byte), 2(Byte), 2(Byte), 0(Byte), 2018-03-21 16:27:00.0(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 16(Long)
+2018-06-15 19:34:49,597 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:50:17,696 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 12572 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-15 19:50:17,707 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-15 19:50:17,708 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-15 19:50:49,676 INFO (StartupInfoLogger.java:57)- Started OrderApp in 34.398 seconds (JVM running for 45.124)
+2018-06-15 19:54:16,981 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, user_id, consignee, phone, country, province, city, district, address, zipcode, status from user_address where id = ? 
+2018-06-15 19:54:16,996 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-15 19:54:17,130 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:54:17,287 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_info (order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-06-15 19:54:17,368 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1007592122582302720(String), 36(Long), 0(BigDecimal), 0(Byte), 0(Byte), 0(Byte), 2018-06-15 19:54:17.206(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 2(Byte)
+2018-06-15 19:54:17,455 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:32,129 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, product_id, code, price from product_sku where id = ? 
+2018-06-15 19:54:32,916 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 98(Long)
+2018-06-15 19:54:33,559 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select id, product_sku_id, sku_property_id, value, image from product_sku_property where product_sku_id = ? 
+2018-06-15 19:54:33,560 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 98(Long)
+2018-06-15 19:54:33,667 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select id, catalog_id, name, type, sort from sku_property where id = ? 
+2018-06-15 19:54:33,668 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 3(Long)
+2018-06-15 19:54:33,833 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 1
+2018-06-15 19:54:34,029 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select id, catalog_id, name, type, sort from sku_property where id = ? 
+2018-06-15 19:54:34,030 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 4(Long)
+2018-06-15 19:54:34,048 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 1
+2018-06-15 19:54:34,049 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:54:34,067 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:54:34,589 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_product (order_id, sku_id, product_name, product_number, product_price, total_price, product_img) values (?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:54:34,595 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long), 98(Long), 测试商品(String), 2(Integer), 11.00(BigDecimal), 22.00(BigDecimal), (String)
+2018-06-15 19:54:34,621 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:34,622 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_product_property (order_product_id, name, value ) values (?, ?, ? ) 
+2018-06-15 19:54:34,625 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long), 内存(String), 32G(String)
+2018-06-15 19:54:34,630 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:34,631 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_product_property (order_product_id, name, value ) values (?, ?, ? ) 
+2018-06-15 19:54:34,632 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 30(Long), 颜色(String), 白(String)
+2018-06-15 19:54:34,634 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:34,976 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, product_id, code, price from product_sku where id = ? 
+2018-06-15 19:54:35,006 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 99(Long)
+2018-06-15 19:54:35,008 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select id, product_sku_id, sku_property_id, value, image from product_sku_property where product_sku_id = ? 
+2018-06-15 19:54:35,014 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 99(Long)
+2018-06-15 19:54:35,043 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select id, catalog_id, name, type, sort from sku_property where id = ? 
+2018-06-15 19:54:35,044 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 3(Long)
+2018-06-15 19:54:35,046 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 1
+2018-06-15 19:54:35,048 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select id, catalog_id, name, type, sort from sku_property where id = ? 
+2018-06-15 19:54:35,049 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 4(Long)
+2018-06-15 19:54:35,061 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 1
+2018-06-15 19:54:35,062 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:54:35,075 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:54:35,079 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_product (order_id, sku_id, product_name, product_number, product_price, total_price, product_img) values (?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:54:35,080 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long), 99(Long), 测试商品2(String), 1(Integer), 11.00(BigDecimal), 11.00(BigDecimal), (String)
+2018-06-15 19:54:35,082 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:35,083 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_product_property (order_product_id, name, value ) values (?, ?, ? ) 
+2018-06-15 19:54:35,084 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long), 内存(String), 32G(String)
+2018-06-15 19:54:35,085 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:35,086 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_product_property (order_product_id, name, value ) values (?, ?, ? ) 
+2018-06-15 19:54:35,087 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 31(Long), 颜色(String), 黑(String)
+2018-06-15 19:54:35,088 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:35,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:54:35,093 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1007592122582302720(String), 36(Long), 33.00(BigDecimal), 0(Byte), 0(Byte), 2(Byte), 0(Byte), 2018-06-15 19:54:17.206(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 17(Long)
+2018-06-15 19:54:35,129 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:35,130 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into invoice (invoice_type, invoice_head, user_id, order_id, invoice_content, invoice_phone, invoice_email) values (?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:54:35,134 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Byte), 1(Byte), 36(Long), 17(Long), 1(Byte), 13022004622(String), (String)
+2018-06-15 19:54:35,259 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:54:35,277 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_action (order_id, action_user, order_status, flow_status, pay_status, action_place, action_note, action_time) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:54:35,283 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long), admin(String), 0(Byte), 0(Byte), 0(Byte), 后台(String), 生成订单(String), 2018-06-15 19:54:35.277(Timestamp)
+2018-06-15 19:54:35,294 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:55:45,126 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(id) from order_info 
+2018-06-15 19:55:45,128 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-06-15 19:55:45,157 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:55:45,160 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id,order_sn,pay_type,order_status,flow_status,pay_status,order_time,consignee,phone,order_amount from order_info order by id desc limit ?,? 
+2018-06-15 19:55:45,161 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 5(Integer)
+2018-06-15 19:55:45,175 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:55:45,177 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 17(BigDecimal)
+2018-06-15 19:55:45,183 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,183 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 30(BigDecimal)
+2018-06-15 19:55:45,187 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,189 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,190 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 31(BigDecimal)
+2018-06-15 19:55:45,192 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,193 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:55:45,195 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:55:45,196 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:55:45,198 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,199 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:55:45,202 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,204 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,205 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:55:45,207 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,208 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:55:45,210 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:55:45,211 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 15(BigDecimal)
+2018-06-15 19:55:45,214 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,215 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 26(BigDecimal)
+2018-06-15 19:55:45,217 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,218 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,219 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 27(BigDecimal)
+2018-06-15 19:55:45,221 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,222 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:55:45,224 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:55:45,225 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 14(BigDecimal)
+2018-06-15 19:55:45,227 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,228 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 24(BigDecimal)
+2018-06-15 19:55:45,230 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,231 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,232 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 25(BigDecimal)
+2018-06-15 19:55:45,235 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,235 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:55:45,237 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:55:45,237 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 10(BigDecimal)
+2018-06-15 19:55:45,240 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,241 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 16(BigDecimal)
+2018-06-15 19:55:45,245 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,246 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:55:45,247 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 17(BigDecimal)
+2018-06-15 19:55:45,249 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:55:45,249 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:55:45,253 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2018-06-15 19:56:10,367 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:56:10,368 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:10,376 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:56:10,378 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 17(BigDecimal)
+2018-06-15 19:56:10,380 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:10,381 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 30(BigDecimal)
+2018-06-15 19:56:10,383 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:10,385 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:10,386 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 31(BigDecimal)
+2018-06-15 19:56:10,387 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:10,388 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:56:10,389 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:10,411 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:56:10,412 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 36(Long)
+2018-06-15 19:56:10,416 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:10,423 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from order_action where order_id = ? 
+2018-06-15 19:56:10,424 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:10,442 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:27,770 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:56:27,771 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:27,774 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:56:27,776 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 17(BigDecimal)
+2018-06-15 19:56:27,778 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:27,779 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 30(BigDecimal)
+2018-06-15 19:56:27,782 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:27,783 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:27,784 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 31(BigDecimal)
+2018-06-15 19:56:27,785 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:27,786 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:56:27,786 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:27,787 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:56:27,789 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1007592122582302720(String), 36(Long), 33.00(BigDecimal), 1(Byte), 0(Byte), 2(Byte), 0(Byte), 2018-06-15 19:54:17.0(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 17(Long)
+2018-06-15 19:56:27,815 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:56:27,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_action (order_id, action_user, order_status, flow_status, pay_status, action_place, action_note, action_time) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:56:27,818 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long), admin(String), 1(Byte), 0(Byte), 0(Byte), 后台(String), 确认订单(String), 2018-06-15 19:56:27.816(Timestamp)
+2018-06-15 19:56:27,828 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:56:27,921 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:56:27,922 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:27,924 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:56:27,925 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 17(BigDecimal)
+2018-06-15 19:56:27,927 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:27,928 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 30(BigDecimal)
+2018-06-15 19:56:27,930 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:27,931 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:27,932 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 31(BigDecimal)
+2018-06-15 19:56:27,933 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:27,934 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:56:27,935 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:28,038 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:56:28,040 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 36(Long)
+2018-06-15 19:56:28,056 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:28,124 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from order_action where order_id = ? 
+2018-06-15 19:56:28,124 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:28,127 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-06-15 19:56:55,611 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:56:55,612 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:55,614 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:56:55,615 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 17(BigDecimal)
+2018-06-15 19:56:55,616 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:55,617 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 30(BigDecimal)
+2018-06-15 19:56:55,619 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:55,621 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:55,622 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 31(BigDecimal)
+2018-06-15 19:56:55,624 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:55,625 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:56:55,626 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:55,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:56:55,629 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1007592122582302720(String), 36(Long), 33.00(BigDecimal), 1(Byte), 1(Byte), 2(Byte), 0(Byte), 2018-06-15 19:54:17.0(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 17(Long)
+2018-06-15 19:56:55,646 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:56:55,647 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_action (order_id, action_user, order_status, flow_status, pay_status, action_place, action_note, action_time) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:56:55,648 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long), admin(String), 1(Byte), 1(Byte), 0(Byte), 后台(String), 确认发货(String), 2018-06-15 19:56:55.646(Timestamp)
+2018-06-15 19:56:55,675 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:56:55,794 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:56:55,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:55,797 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:56:55,798 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 17(BigDecimal)
+2018-06-15 19:56:55,800 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:55,801 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 30(BigDecimal)
+2018-06-15 19:56:55,802 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:55,804 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:56:55,805 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 31(BigDecimal)
+2018-06-15 19:56:55,806 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:56:55,807 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:56:55,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:56,024 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time from user_info where id = ? 
+2018-06-15 19:56:56,043 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 36(Long)
+2018-06-15 19:56:56,046 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:56:56,112 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from order_action where order_id = ? 
+2018-06-15 19:56:56,113 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:56:56,115 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-06-15 19:57:32,722 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:57:32,723 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long)
+2018-06-15 19:57:32,726 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:57:32,726 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 16(BigDecimal)
+2018-06-15 19:57:32,728 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:57:32,729 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 28(BigDecimal)
+2018-06-15 19:57:32,731 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:57:32,733 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:57:32,734 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 29(BigDecimal)
+2018-06-15 19:57:32,736 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:57:32,736 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:57:32,737 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:57:32,738 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:57:32,740 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 976374599358873600(String), 1(Long), 33.00(BigDecimal), 2(Byte), 2(Byte), 2(Byte), 0(Byte), 2018-03-21 16:27:00.0(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 16(Long)
+2018-06-15 19:57:32,742 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:57:32,743 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_action (order_id, action_user, order_status, flow_status, pay_status, action_place, action_note, action_time) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:57:32,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 16(Long), Lily(String), 2(Byte), 2(Byte), 0(Byte), 前台(String), 确认收货(String), 2018-06-15 19:57:32.742(Timestamp)
+2018-06-15 19:57:32,773 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:57:50,730 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, order_sn, user_id, order_amount, order_status, flow_status, pay_status, order_time, phone, consignee, country, province, city, district, address, zipcode,pay_type from order_info where id = ? 
+2018-06-15 19:57:50,731 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long)
+2018-06-15 19:57:50,733 DEBUG (BaseJdbcLogger.java:159)- ====>  Preparing: select * from order_product where order_id = ? 
+2018-06-15 19:57:50,734 DEBUG (BaseJdbcLogger.java:159)- ====> Parameters: 17(BigDecimal)
+2018-06-15 19:57:50,736 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:57:50,736 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 30(BigDecimal)
+2018-06-15 19:57:50,738 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:57:50,739 DEBUG (BaseJdbcLogger.java:159)- ======>  Preparing: select * from order_product_property where order_product_id = ? 
+2018-06-15 19:57:50,740 DEBUG (BaseJdbcLogger.java:159)- ======> Parameters: 31(BigDecimal)
+2018-06-15 19:57:50,741 DEBUG (BaseJdbcLogger.java:159)- <======      Total: 2
+2018-06-15 19:57:50,742 DEBUG (BaseJdbcLogger.java:159)- <====      Total: 2
+2018-06-15 19:57:50,742 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-15 19:57:50,743 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update order_info set order_sn = ?, user_id = ?, order_amount = ?, order_status = ?, flow_status = ?, pay_type = ?, pay_status = ?, order_time = ?, phone = ?, consignee = ?, country = ?, province = ?, city = ?, district = ?, address = ?, zipcode = ? where id = ? 
+2018-06-15 19:57:50,744 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1007592122582302720(String), 36(Long), 33.00(BigDecimal), 2(Byte), 2(Byte), 2(Byte), 0(Byte), 2018-06-15 19:54:17.0(Timestamp), 13022004699(String), 罗海鹏(String), 中国(String), 广东省(String), 广州市(String), 天河区(String), 大地工业区D栋603(String), 610000(String), 17(Long)
+2018-06-15 19:57:50,752 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-15 19:57:50,753 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into order_action (order_id, action_user, order_status, flow_status, pay_status, action_place, action_note, action_time) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-06-15 19:57:50,754 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 17(Long), Lily(String), 2(Byte), 2(Byte), 0(Byte), 前台(String), 确认收货(String), 2018-06-15 19:57:50.753(Timestamp)
+2018-06-15 19:57:50,783 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

@@ -1,0 +1,43 @@
+2018-06-16 10:04:29,628 INFO (StartupInfoLogger.java:48)- Starting GoodsApp on hope with PID 1780 (E:\IdeaProjects\shop-parent\shop-goods-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:04:29,659 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:04:29,659 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:04:58,765 INFO (StartupInfoLogger.java:57)- Started GoodsApp in 30.332 seconds (JVM running for 36.077)
+2018-06-16 10:05:32,296 INFO (StartupInfoLogger.java:48)- Starting MemberApp on hope with PID 756 (E:\IdeaProjects\shop-parent\shop-member-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:05:32,301 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:05:32,302 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:05:55,674 INFO (StartupInfoLogger.java:57)- Started MemberApp in 24.314 seconds (JVM running for 25.998)
+2018-06-16 10:06:16,471 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 5492 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:06:16,475 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:06:16,476 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:06:41,804 INFO (StartupInfoLogger.java:57)- Started OrderApp in 26.371 seconds (JVM running for 27.763)
+2018-06-16 10:08:57,222 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, name, code, sort, p_id, is_parent from catalog where p_id = ? order by sort asc 
+2018-06-16 10:08:57,287 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-06-16 10:08:58,158 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-06-16 10:17:49,041 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 2584 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:17:49,048 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:17:49,049 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:18:17,032 INFO (StartupInfoLogger.java:57)- Started OrderApp in 28.797 seconds (JVM running for 30.487)
+2018-06-16 10:19:40,727 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 9480 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:19:40,732 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:19:40,732 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:20:08,031 INFO (StartupInfoLogger.java:57)- Started OrderApp in 28.052 seconds (JVM running for 29.902)
+2018-06-16 10:22:43,387 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 3404 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:22:43,391 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:22:43,392 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:23:10,517 INFO (StartupInfoLogger.java:57)- Started OrderApp in 27.622 seconds (JVM running for 31.887)
+2018-06-16 10:36:30,144 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 6304 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:36:30,153 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:36:30,154 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:36:55,476 INFO (StartupInfoLogger.java:57)- Started OrderApp in 26.15 seconds (JVM running for 28.432)
+2018-06-16 10:42:24,992 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 11128 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:42:24,998 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:42:24,998 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:42:53,131 INFO (StartupInfoLogger.java:57)- Started OrderApp in 28.974 seconds (JVM running for 30.755)
+2018-06-16 10:47:25,383 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 4524 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:47:25,387 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:47:25,388 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:47:52,625 INFO (StartupInfoLogger.java:57)- Started OrderApp in 28.407 seconds (JVM running for 30.945)
+2018-06-16 10:52:40,001 INFO (StartupInfoLogger.java:48)- Starting OrderApp on hope with PID 7912 (E:\IdeaProjects\shop-parent\shop-order-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-16 10:52:40,009 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-16 10:52:40,009 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-16 10:53:08,082 INFO (StartupInfoLogger.java:57)- Started OrderApp in 29.224 seconds (JVM running for 30.847)

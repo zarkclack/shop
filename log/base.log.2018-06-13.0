@@ -1,0 +1,37 @@
+2018-06-13 14:25:00,798 INFO (StartupInfoLogger.java:48)- Starting MemberApp on hope with PID 7988 (E:\IdeaProjects\shop-parent\shop-member-server\target\classes started by zark in E:\IdeaProjects\shop-parent)
+2018-06-13 14:25:00,810 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-06-13 14:25:00,811 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-13 14:25:38,901 INFO (StartupInfoLogger.java:57)- Started MemberApp in 42.122 seconds (JVM running for 55.553)
+2018-06-13 14:33:13,710 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id from user_login where user_name = ? 
+2018-06-13 14:33:13,812 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String)
+2018-06-13 14:33:13,882 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2018-06-13 14:33:13,909 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into user_login (user_name, password, state) values (?, ?, ?) 
+2018-06-13 14:33:13,918 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String), C4CA4238A0B923820DCC509A6F75849B(String), 0(Byte)
+2018-06-13 14:33:13,930 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-13 14:33:13,939 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into user_info (id,nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time) values (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-06-13 14:33:13,960 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 35(Long), null, null, null, null, null, null, null, null, null, null, null, 2018-06-13 14:33:13.938(Timestamp)
+2018-06-13 14:33:13,976 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-13 14:34:01,669 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id from user_login where user_name = ? 
+2018-06-13 14:34:01,670 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String)
+2018-06-13 14:34:01,677 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-13 14:35:36,365 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id from user_login where user_name = ? 
+2018-06-13 14:35:36,366 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String)
+2018-06-13 14:35:36,368 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2018-06-13 14:35:36,369 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into user_login (user_name, password, state) values (?, ?, ?) 
+2018-06-13 14:35:36,372 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String), C4CA4238A0B923820DCC509A6F75849B(String), 0(Byte)
+2018-06-13 14:35:36,405 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-13 14:35:36,407 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into user_info (id,nick_name, real_name, head_img, id_number, phone, email, sex, birthday, province, city, district, regist_time) values (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-06-13 14:35:36,411 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 36(Long), null, null, null, null, null, null, null, null, null, null, null, 2018-06-13 14:35:36.407(Timestamp)
+2018-06-13 14:35:36,414 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-06-13 14:36:45,942 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id from user_login where user_name = ? 
+2018-06-13 14:36:45,943 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String)
+2018-06-13 14:36:45,948 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-13 14:39:12,100 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, user_name,password, state from user_login where user_name = ? and password = ? 
+2018-06-13 14:39:12,108 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String), C4CA4238A0B923820DCC509A6F75849B(String)
+2018-06-13 14:39:12,140 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-13 14:39:36,582 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, user_name,password, state from user_login where user_name = ? and password = ? 
+2018-06-13 14:39:36,596 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String), C4CA4238A0B923820DCC509A6F75849B(String)
+2018-06-13 14:39:36,606 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-06-13 14:47:22,837 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, user_name,password, state from user_login where user_name = ? and password = ? 
+2018-06-13 14:47:22,839 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: Lily(String), C4CA4238A0B923820DCC509A6F75849B(String)
+2018-06-13 14:47:22,842 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
